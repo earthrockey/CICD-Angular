@@ -1,0 +1,27 @@
+<p>edit-book</p>
+<div class="row">
+    <div class="column-1">
+        <label>Code: </label>
+    </div>
+    <div class="column-4">
+        <input type="text" id="code" placeholder="code" [(ngModel)]="code" />
+    </div>
+  </div>
+<div class="row">
+    <div class="column-1">
+        <label>Name: </label>
+    </div>
+    <div class="column-4">
+        <input type="text" id="name" placeholder="name" [(ngModel)]="name" />
+    </div>
+</div>
+<div class="row">
+    <div class="column-1">
+        <label>Detail: </label>
+    </div>
+    <div class="column-4">
+        <input type="text" id="detail" placeholder="detail" [(ngModel)]="detail" />
+    </div>
+</div>
+<button (click)="editBook()" routerLink="/">Edit</button>
+<button routerLink="/">Back</button>
